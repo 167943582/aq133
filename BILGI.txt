@@ -1,0 +1,38 @@
+ARKADAŞLAR SİZDEN BİR RİCAM VAR SİTENİZİN KURULUMUNU ELİMDEN GELDİĞİNCE YAPMAYA ÇALIŞIYORUM.
+SİZ DOSYALARI İNDİRİN DOSYALARI İNDİRDİĞİNİZ ZAMAN DOSYALARIN OLDUĞU KLASÖR İÇERİSİNDE KURULUM TALİMATI VAR.
+ AYNI TALİMATLAR BURADA DA OLSUN DİYE BU AÇIKLAMAYI YAZIYORUM.
+
+ DOSYALARINIZI İNDİRİN
+ 
+ ----------------------------------------------
+ DAHA SONRA KLASÖR İÇERİSİNDE BULUNAN veritabanı.sq DOSYASINI OLUŞTURDUĞUNUZ SİTENİN -->
+ CPanel->MYSQL VERİTABANLARI SEKMESİNE TIKLAYIN
+ YENİ VERİTABANI OLUŞTURUN
+ VERİTABANI ŞİFRENİZİ VE ULLANICINIZI OLUŞTURUN
+ DAHA SONRA AŞAĞIDAKİ İŞLEMİ YAPIN 
+ sys/config.php DOSYASINI AÇIN
+ ----------------------------------------------
+$host	=	"localhost";
+$user	=	"veritabanı kullanıcınızı yazın";
+$pass	=	"veritabanı şifrenizi yazın";
+$db 	=	"veritabanı adınızı yazın";
+------------------------------------------
+SCRİPT KURULUMU YAPILDIĞINDA KAYIT OL SAYFASINDA reCaptcha HATASI ALACAKSINIZ 
+BUNU ŞURADAN DÜZELTECEĞİZ.
+https://www.google.com/recaptcha/admin/create 
+BURAYA TIKLAYIN SİTENİZ İÇİN GEREKLİ İŞLEMLERİ YAPIN
+İŞLEMLER ŞU ŞEKİLDE OLMALIDIR:
+reCAPTCHA s2   // SEÇECEĞİMİZ SEÇENEK 
+İstekleri bir eylemle doğrulayın
+"Robot değilim" Onay Kutusu   // BUNU SEÇİYORUZ 
+İstekleri "Robot değilim" onay kutusuyla doğrulayın
+Görünmez reCAPTCHA rozeti
+İstekleri arka planda doğrula
+reCAPTCHA Android
+Android uygulamanızda istekleri doğrulayın
+ALT TARAFTA ALAN ADLARI KISMI VAR ORAYA DA SİTEMİZİN ADINI YAZIYORUZ AMA SADECE SİTE ADI ÖRNEK celebismm.com DİYE
+GÖNDER DEYİP AÇILAN SAYFADA SİTE ANAHTARINI KOPYALIYORUZ
+DAHA SONRA views/default/register.view.php  DOSYASINI AÇIYORUZ 70. SATIRDA  BULUNAN data-sitekey KISMINA OLUŞTURDUĞUMUZ KODU KOPYALIYORUZ .
+
+YAPAMADIĞINIZ YERLERİ BANA İNSTAGRAM ÜZERİNDEN YAZIN.
+ÇOK YAKINDA YEPYENİ PANELLER SİZLERLE.
